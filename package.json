@@ -1,0 +1,24 @@
+{
+  "name": "chat-websocket-node-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugene-lophitsky/chat-websocket-node-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugene-lophitsky/chat-websocket-node-express/issues"
+  },
+  "homepage": "https://github.com/eugene-lophitsky/chat-websocket-node-express#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
