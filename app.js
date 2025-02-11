@@ -9,3 +9,9 @@ app.get("/", (req, res)=>{
 app.listen(port, ()=>{
     console.log(`приложение запущено на порту ${port}`);
 })
+
+app.get("/other-route", (_,res)=>{
+    res.send("произвольный маршрут");
+
+})
+
