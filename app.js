@@ -1,17 +1,19 @@
-const express = require("express");
+import express from "express";
+const router = express.Router();
+import aboutRouter from "./routes/aboutRouter.js";
+
 const app = express();
 const port = 3030;
 
-app.get("/", (req, res)=>{
-    res.send("Пробный запуск сервера")
-})
+app.set("view engine", "ejs");
+
+app.use("/about", aboutRouter)
 
 app.listen(port, ()=>{
     console.log(`приложение запущено на порту ${port}`);
 })
 
-app.get("/other-route", (_,res)=>{
-    res.send("произвольный маршрут");
 
-})
 
+
+export default app;

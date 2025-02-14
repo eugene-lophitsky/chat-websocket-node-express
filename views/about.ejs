@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>О нас</h1>
+</header>
+
+<div class="container">
+    <h2>Кто мы?</h2>
+    <p>Мы — команда профессионалов, увлеченных своим делом. Наша цель — предоставлять высококачественные услуги и продукты, которые помогают нашим клиентам достигать своих целей.</p>
+
+    <h2><%= user.name %></h2>
+    <p>Мы стремимся к тому, чтобы сделать мир лучше, предлагая инновационные решения и поддерживая наших клиентов на каждом этапе их пути.</p>
+
+    <h2>Наши ценности</h2>
+    <ul>
+        <% for (var i = 0; i < ourValues.length; i++) { %>
+            <li><%= ourValues[i].valueText %></li>
+        <% } %>
+    </ul>
+
+    <h2>Наша команда</h2>
+    <p>Наша команда состоит из опытных специалистов, которые работают вместе, чтобы обеспечить наилучший результат для наших клиентов. Мы гордимся тем, что создаем дружелюбную и поддерживающую атмосферу, где каждый может раскрыть свой потенциал.</p>
+</div>
+
+<footer>
+    <p>&copy; 2023 Ваша компания. Все права защищены.</p>
+</footer>
+</body>
+</html>
